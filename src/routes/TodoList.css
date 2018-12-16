@@ -1,0 +1,15 @@
+.app{
+  padding: 20px;
+}
+
+.app .add{
+
+}
+
+.app .list .completed{
+  text-decoration: line-through;
+}
+
+.app .filter a{
+  margin-right: 10px;
+}
