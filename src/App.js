@@ -8,8 +8,6 @@ import Lesson03 from './routes/Lesson03/';
 import Lesson04 from './routes/Lesson04/';
 import Lesson05 from './routes/Lesson05/';
 import Lesson06 from './routes/Lesson06/';
-import Lesson07 from './routes/Lesson07/';
-
 
 class App extends Component {
   render() {
@@ -23,7 +21,6 @@ class App extends Component {
           <Route path="/lesson04" component={Lesson04} />
           <Route path="/lesson05" component={Lesson05} />
           <Route path="/lesson06" component={Lesson06} />
-          <Route path="/lesson07" component={Lesson07} />
         </Switch>
       </div>
     );

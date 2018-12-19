@@ -70,9 +70,9 @@ export default class Lesson03 extends Component {
           ))}
         </ul>
         <p className="filter">
-          <a href="javascript:;">全部</a>
-          <a href="javascript:;">已完成</a>
-          <a  href="javascript:;">未完成</a>
+          <button>全部</button>
+          <button>已完成</button>
+          <button>未完成</button>
         </p>
       </div>
     );

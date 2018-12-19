@@ -15,7 +15,6 @@ class Homepage extends Component {
           <li><Link to='/lesson04'>Lesson04: 过滤状态</Link></li>
           <li><Link to='/lesson05'>Lesson05: 组件化</Link></li>
           <li><Link to='/lesson06'>Lesson06: 数据持久化</Link></li>
-          <li><Link to='/lesson07'>Lesson07: 与服务端交互</Link></li>
         </ul>
       </div>
     );

@@ -81,9 +81,21 @@ export default class Lesson04 extends Component {
           ))}
         </ul> 
         <p className="filter">
-          {
+          <button 
+            disabled={this.state.filterType===0} 
+            onClick={() => this.handleChangeFilter(0)}
+          >全部</button>
+          <button 
+            disabled={this.state.filterType===1} 
+            onClick={() => this.handleChangeFilter(1)}
+          >已完成</button>
+          <button 
+            disabled={this.state.filterType===-1} 
+            onClick={() => this.handleChangeFilter(-1)}
+          >未完成</button>
+          {/* {
             this.state.filterType===0?
-            <span>全部</span>:
+            <button disabled={this.state.filterType===0} onClick={() => this.handleChangeFilter(0)}>全部</button>:
             <a href="javascript:;" onClick={() => this.handleChangeFilter(0)}>全部</a>
           }
           {
@@ -95,7 +107,7 @@ export default class Lesson04 extends Component {
             this.state.filterType===-1?
             <span>未完成</span>:
             <a href="javascript:;" onClick={() => this.handleChangeFilter(-1)}>未完成</a>
-          }
+          } */}
         </p>
       </div>
     );
