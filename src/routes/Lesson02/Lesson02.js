@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../TodoList.css';
 
 class Lesson02 extends Component {
@@ -34,6 +35,10 @@ class Lesson02 extends Component {
   render() {
     return (
       <div className="app">
+        <p>
+          Lesson02: 添加待办项
+          <Link to="/" class="back-btn">返回</Link>
+        </p>
         <h2>React Todo List</h2>
         <p className="add">
           <input value={this.state.inputValue} onChange={this.handleInputChange}/>

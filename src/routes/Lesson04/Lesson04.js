@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../TodoList.css';
 
 export default class Lesson04 extends Component {
@@ -61,6 +62,10 @@ export default class Lesson04 extends Component {
   render() {
     return (
       <div className="app">
+        <p>
+          Lesson04: 过滤状态
+          <Link to="/" class="back-btn">返回</Link>
+        </p>
         <h2>React Todo List</h2>
         <p className="add">
           <input value={this.state.inputValue} onChange={this.handleInputChange}/>
@@ -69,9 +74,9 @@ export default class Lesson04 extends Component {
         <ul className="list">
           {this.state.todos
             .filter(i => {
-              if(this.state.filterType===0)return true;
-              else if(this.state.filterType===1) return i.completed;
+              if(this.state.filterType===1) return i.completed;
               else if(this.state.filterType===-1) return !i.completed;
+              else return true;
             })
             .map((item,index) => (
             <li key={index} className={item.completed?'completed':''} style={{display: item.deleted?'none':'block'}}>

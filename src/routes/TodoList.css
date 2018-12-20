@@ -2,6 +2,10 @@
   padding: 20px;
 }
 
+.app .back-btn{
+  margin-left: 10px;
+}
+
 .app .add input{
   width: 180px;
   height: 24px;
