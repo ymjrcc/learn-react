@@ -64,7 +64,7 @@ export default class Lesson04 extends Component {
       <div className="app">
         <p>
           Lesson04: 过滤状态
-          <Link to="/" class="back-btn">返回</Link>
+          <Link to="/" className="back-btn">返回</Link>
         </p>
         <h2>React Todo List</h2>
         <p className="add">

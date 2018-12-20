@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import '../../TodoList.css'
+import React from 'react';
+import '../../TodoList.css';
 
 const Filter = ({filterType, handleChangeFilter}) => (
   <p className="filter">

@@ -67,7 +67,7 @@ export default class Lesson05 extends Component {
       <div className="app">
         <p>
           Lesson05: 组件化
-          <Link to="/" class="back-btn">返回</Link>
+          <Link to="/" className="back-btn">返回</Link>
         </p>
         <h2>React Todo List</h2>
         <Add 

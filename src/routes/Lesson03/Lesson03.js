@@ -59,7 +59,7 @@ export default class Lesson03 extends Component {
       <div className="app">
         <p>
           Lesson03: 更新待办项（完成、删除）
-          <Link to="/" class="back-btn">返回</Link>
+          <Link to="/" className="back-btn">返回</Link>
         </p>
         <h2>React Todo List</h2>
         <p className="add">

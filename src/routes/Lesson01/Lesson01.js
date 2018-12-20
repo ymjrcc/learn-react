@@ -8,7 +8,7 @@ class Lesson01 extends Component {
       <div className="app">
         <p>
           Lesson01: 搭个骨架
-          <Link to="/" class="back-btn">返回</Link>
+          <Link to="/" className="back-btn">返回</Link>
         </p>
         <h2>React Todo List</h2>
         <p className="add">
